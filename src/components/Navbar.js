@@ -77,6 +77,15 @@ function Navbar() {
                ABOUT US
               </Link>
             </li>
+            <li className='nav-item'>
+              <Link
+                to='/products'
+                className='nav-links'
+                onClick={closeMobileMenu}
+              >
+               Rejoignez-nous!
+              </Link>
+            </li>
           
 
           </ul>

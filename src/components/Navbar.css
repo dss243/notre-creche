@@ -46,7 +46,7 @@
   text-align: center;
   width: 60vw;
   justify-content: end;
-  margin-right: 15rem;
+  margin-right: 10rem;
 }
 
 .nav-item {
@@ -75,6 +75,9 @@
 }
 
 .nav-item:nth-child(4) .nav-links {
+  color: #a1af9d; /* Blue color */
+}
+.nav-item:nth-child(5) .nav-links {
   color: #a1af9d; /* Blue color */
 }
 
