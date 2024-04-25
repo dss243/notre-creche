@@ -1,0 +1,125 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.home,
+.services,
+.products,
+.sign-up {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.services {
+ 
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.products {
+ 
+  background-position: center;
+  background-size: fill;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+.sign-up {
+  background-image: url("https://images.unsplash.com/photo-1587235587172-f05eee42fdac?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #60480D;
+  font-size: 80px;
+  padding-top: 100px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+label {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #3a6366;
+  
+  font-family: "Platypi", serif, bold;
+ 
+  width: 100%;
+  text-align: left;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="date"],
+input[type="tel"] {
+  border: none;
+  border-bottom: 4px solid #a1af9d;
+  padding: 25px;
+  width: 100%;
+  margin-bottom: 45px;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+input[type="tel"]:focus {
+  outline: none;
+  border-bottom: 2px solid #aa4704;
+}
+
+button[type="submit"] {
+  background-color: #aa4704;
+  color: white;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 35px;
+  cursor: pointer;
+  font-size: 30px;
+  margin-top: 60px;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+button[type="button"] {
+  background-color: #3a6366;
+  color: white;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 35px;
+  cursor: pointer;
+  font-size: 30px;
+  position: absolute;
+  top: 180%;
+  transform: translateY(-50%);
+  right: 400px;
+}
+
+button[type="button"]:hover {
+  background-color: #45a049;
+}
