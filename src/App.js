@@ -9,7 +9,7 @@ import SignUp from './components/pages/SignUp';
 import Contact from './components/pages/Contact';
 function App() {
   return (
-    <>
+    <> 
       <Router>
         <Navbar />
         <Switch>
