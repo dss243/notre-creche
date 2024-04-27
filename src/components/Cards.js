@@ -15,7 +15,7 @@ function Cards() {
               label='Conscience'
               path='/activity'
               buttonText='Sinscrire'
-              buttonPath='/sign-up'
+              buttonPath='/sign-upActivtie'
             />
             <CardItem
               src='images/25.jpg'
@@ -23,7 +23,7 @@ function Cards() {
               label='culture'
               path='/services'
               buttonText='Sinscrire'
-              buttonPath='/sign-up'
+              buttonPath='/sign-upActivtie'
             />
             <CardItem
               src='images/eid.jpg'
@@ -31,7 +31,7 @@ function Cards() {
               label='fete'
               path='/services'
               buttonText='Sinscrire'
-              buttonPath='/sign-up'
+              buttonPath='/sign-upActivtie'
             />
             <CardItem
               src='images/picnic.jpg'
@@ -39,41 +39,41 @@ function Cards() {
               label='Adventure'
               path='/products'
               buttonText='Sinscrire'
-              buttonPath='/sign-up'
+              buttonPath='/sign-upActivtie'
             />
             <CardItem
               src='images/yennayr.jpg'
               text='
               "Yennayer" est le nom berbère du premier mois du calendrier agraire utilisé par les populations berbères dAfrique du Nord, principalement en Algérie, au Maroc, en Tunisie et en Libye. Cest '
               label='culture'
-              path='/sign-up'
+              path='/sign-upActivtie'
               buttonText='Sinscrire'
-              buttonPath='/sign-up'
+              buttonPath='/sign-upActivtie'
             />
             <CardItem
               src='images/trip.jpg'
               text='
               "Yennayer" est le nom berbère du premier mois du calendrier agraire utilisé par les populations berbères dAfrique du Nord, principalement en Algérie, au Maroc, en Tunisie et en Libye. Cest '
               label='Adventure'
-              path='/sign-up'
+              path='/sign-upActivtie'
               buttonText='Sinscrire'
-              buttonPath='/sign-up'
+              buttonPath='/sign-upActivtie'
             />
             <CardItem
               src='images/1nov.jpg'
               text='la celeberation de Le 1er novembre est commémoré en Algérie comme le début de la guerre dindépendance contre le colonialisme français, marquant le début dune lutte héroïque pour lautodétermination du pays.'
               label='Adventure'
-              path='/sign-up'
+              path='/sign-upActivtie'
               buttonText='Sinscrire'
-              buttonPath='/sign-up'
+              buttonPath='/sign-upActivtie'
             />
             <CardItem
               src='images/constantine.jpg'
               text='la celeberation de Le 1er novembre est commémoré en Algérie comme le début de la guerre dindépendance contre le colonialisme français, marquant le début dune lutte héroïque pour lautodétermination du pays.'
               label='Adventure'
-              path='/sign-up'
+              path='/sign-upActivtie'
               buttonText='Sinscrire'
-              buttonPath='/sign-up'
+              buttonPath='/sign-upActivtie'
             />
           </ul>
         </div>

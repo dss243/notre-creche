@@ -5,29 +5,30 @@ export default function SignUp() {
   const [parentLastname, setParentLastname] = useState('');
   const [parentPhone, setParentPhone] = useState('');
   const [parentEmail, setParentEmail] = useState('');
-  const [kids, setKids] = useState([{ name: '', lastname: '', birthdate: '' }]);
-  const [numKids, setNumKids] = useState(1);
+  const [enfantName, setEnfantName] = useState('');
+  const [enfantLastname, setEnfantLastname] = useState('');
+  const [enfantDateDeNaissance, setEnfantDateDeNaissance] = useState('');
+  // const [kids, setKids] = useState([{ name: '', lastname: '', birthdate: '' }]);
+  // const [numKids, setNumKids] = useState(1);
 
-  const handleChange = (event, index) => {
-    const { name, value } = event.target;
-    const [property, childIndex] = name.split('-');
-    console.log('Property:', property);
-    console.log('Child index:', childIndex);
-    console.log('Value:', value);
+  // const handleChange = (event, index) => {
+  //   const { name, value } = event.target;
+  //   const [property, childIndex] = name.split('-');
+  //   console.log('Property:', property);
+  //   console.log('Child index:', childIndex);
+  //   console.log('Value:', value);
   
-    const newKids = [...kids];
-    newKids[index][property] = value;
-    console.log('New kids:', newKids);
+  //   const newKids = [...kids];
+  //   newKids[index][property] = value;
+  //   console.log('New kids:', newKids);
   
-    setKids(newKids);
-  };
-  
-  
+  //   setKids(newKids);
+  // };
 
-  const handleAddChild = () => {
-    setKids([...kids, { name: '', lastname: '', birthdate: '' }]);
-    setNumKids(numKids + 1);
-  };
+  // const handleAddChild = () => {
+  //   setKids([...kids, { name: '', lastname: '', birthdate: '' }]);
+  //   setNumKids(numKids + 1);
+  // };
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -38,11 +39,14 @@ export default function SignUp() {
       nomParent: parentLastname,
       tel: parentPhone,
       mail: parentEmail,
-      enfants: kids.map((child) => ({
-        nom_enfant: child['lastname'],
-        prenom_enfant: child['name'],
-        date_naissance: new Date(child['birthdate']),
-      })),
+      prenomEnfant: enfantName,
+      nomEnfant: enfantLastname,
+      dateNaissance: enfantDateDeNaissance,
+      // enfants: kids.map((child) => ({
+      //   nom_enfant: child['lastname'],
+      //   prenom_enfant: child['name'],
+      //   date_naissance: new Date(child['birthdate']),
+      // })),
     };
   
     // Make a POST request to the server
@@ -62,8 +66,11 @@ export default function SignUp() {
           setParentLastname('');
           setParentPhone('');
           setParentEmail('');
-          setKids([{ name: '', lastname: '', birthdate: '' }]);
-          setNumKids(1);
+          setEnfantName('');
+          setEnfantLastname('');
+          setEnfantDateDeNaissance('');
+          // setKids([{ name: '', lastname: '', birthdate: '' }]);
+          // setNumKids(1);
           // Display success message to user
           alert('Form submitted successfully!');
         } else {
@@ -126,7 +133,37 @@ export default function SignUp() {
             onChange={(event) => setParentEmail(event.target.value)}
           />
         </div>
-        {kids.map((child, index) => (
+        <div>
+          <label htmlFor="enfant-name">Prénom de l'enfant:</label>
+          <input
+            type="text"
+            id="enfant-name"
+            name="enfantName"
+            value={enfantName}
+            onChange={(event) => setEnfantName(event.target.value)}
+          />
+        </div>
+        <div>
+          <label htmlFor="enfant-lastname">Nom de l'enfant:</label>
+          <input
+            type="text"
+            id="enfant-lastname"
+            name="enfantLastname"
+            value={enfantLastname}
+            onChange={(event) => setEnfantLastname(event.target.value)}
+          />
+        </div>
+        <div>
+          <label htmlFor="enfant-datedenaissance">Date de Naissance:</label>
+          <input
+            type="date"
+            id="enfant-datedenaissance"
+            name="enfantDateDeNaissance"
+            value={enfantDateDeNaissance}
+            onChange={(event) => setEnfantDateDeNaissance(event.target.value)}
+          />
+        </div>
+        {/* {kids.map((child, index) => (
           <div key={index}>
             <label htmlFor={`child-name-${index}`}>Prénom de l'enfant:</label>
             <input
@@ -144,19 +181,21 @@ export default function SignUp() {
               value={child.lastname || ''}
               onChange={(event) => handleChange(event, index)}
             />
-            <label htmlFor={`child-age-${index}`}>Date de naissance de l'enfant:</label>
+            <label htmlFor={`child-birthdate-${index}`}>Date de naissance de l'enfant:</label>
             <input
               type="date"
-              id={`child-age-${index}`}
-              name={`age-${index}`}
-              value={child.age || ''}
+              id={`child-birthdate-${index}`}
+              name={`birthdate-${index}`}
+              value={child.birthdate || ''}
               onChange={(event) => handleChange(event, index)}
             />
           </div>
-        ))}
-        <button type="button" onClick={handleAddChild}>
+        ))} */}
+       
+
+        {/* { <button type="button" onClick={handleAddChild}>
           +
-        </button>
+        </button> } */}
         <button type="submit">SUIVANT</button>
       </form>
     </div>

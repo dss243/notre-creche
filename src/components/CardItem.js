@@ -15,6 +15,9 @@ function CardItem(props) {
           </figure>
           <div className='cards__item__info'>
             <h5 className='cards__item__text'>{props.text}</h5>
+            <p className='cards__item__date'>{props.date}</p>
+            <p className='cards__item__start-time'>{props.startTime}</p>
+            <p className='cards__item__end-time'>{props.endTime}</p>
           </div>
         </Link>
         <Link to={props.buttonPath} className='cards__item__button'>
