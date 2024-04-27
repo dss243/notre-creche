@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
 import '../App.css';
 import { Button } from './Button';
 import './HeroSection.css';
@@ -11,11 +10,10 @@ function HeroSection() {
     const text = textRef.current;
     const letters = text.textContent.split('');
     text.textContent = '';
-
     letters.forEach((letter, index) => {
       const span = document.createElement('span');
       span.textContent = letter;
-      span.style.fontFamily = '"Pacifico"';
+      span.style.fontFamily = '"Pacifico"'; // Ajoutez cette ligne
       text.appendChild(span);
 
       if (index === letters.length - 1) return;
@@ -32,9 +30,9 @@ function HeroSection() {
       </h1>
       <p>Qu'est-ce que tu attends?</p>
       <div className="hero-btns">
-        <Link to="/signUp" className="btns">
+        <Button to="/sign-up" buttonStyle="btn--primary" buttonSize="btn--large">
           Pré-inscription
-        </Link>
+        </Button>
       </div>
     </div>
   );
