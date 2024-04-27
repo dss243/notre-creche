@@ -8,7 +8,7 @@ function Footer() {
     <div className='footer-container'>
       <section className='footer-subscription'>
         <p className='footer-subscription-heading'>
-         notre créche est toujour a votre position 
+        Notre crèche est toujours à votre disposition
         </p>
        
        
@@ -29,7 +29,7 @@ function Footer() {
        
         
           <div class='footer-link-items'>
-            <h2>notre reseau sociaux</h2>
+            <h2>Nos reseaux sociaux</h2>
             <Link to='/'>Instagram</Link>
             <Link to='/'>Facebook</Link>
             <Link to='/'>Youtube</Link>
@@ -37,7 +37,7 @@ function Footer() {
           </div>
         </div>
     
-      <section class='social-media'>
+       <section class='social-media'>
         <div class='social-media-wrap'>
           <div class='footer-logo'>
             <Link to='/' className='social-logo'>
@@ -45,7 +45,7 @@ function Footer() {
             
             </Link>
           </div>
-          <small class='website-rights'>NOTRE CRECHE 2024</small>
+          <small class='website-rights'>@ NOTRE CRECHE 2024</small>
           <div class='social-icons'>
             <Link
               class='social-icon-link facebook'
