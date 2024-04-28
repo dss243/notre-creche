@@ -1,9 +1,13 @@
+
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
 video {
   object-fit: cover;
   width: 100%;
   height: 100%;
   position: fixed;
   z-index: -1;
+
 }
 
 .hero-container {
@@ -16,24 +20,46 @@ video {
   align-items: center;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
   object-fit: contain;
+
 }
 
+
 .hero-container > h1 {
+  font-family: "Pacifico";
+  font-weight: 400;
+  font-style: normal;
   color: #fff;
   font-size: 60px;
   margin-top: -100px;
+  font-family: "Pacifico";
 }
 
 .hero-container > p {
   margin-top: 8px;
   color: #fff;
   font-size: 32px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
+  font-family: 'Pacifico';
 }
 
 .hero-btns {
   margin-top: 32px;
+}
+.hero-btns > button {
+  background-color:rgba(241, 176, 207, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 30px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 18px;
+  font-family: 'Pacifico';
+  padding: 12px 30px;
+  transition: background-color 0.3s ease;
+
+}
+
+.hero-btns > button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #e78147;
+  cursor: pointer;
 }
 
 .hero-btns .btn {
@@ -42,6 +68,19 @@ video {
 
 .fa-play-circle {
   margin-left: 4px;
+  
+}
+
+/* ---------------------------------- */
+@keyframes letter-animation {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media screen and (max-width: 960px) {

@@ -15,16 +15,32 @@
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  max-width: 1500px;
-  padding: 0 20px;
+  width: 100%;
+  padding: 0 5px; /* Reduce padding */
+}
+
+.nav-links {
+  color: #000;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.5rem 2rem; /* Réduire l'espacement */
+  height: 100%;
+  font-size: 1rem; /* Réduire la taille de la police */
+  transition: font-size 0.3s ease; /* Add transition for font size */
+}
+
+.nav-links:hover {
+  font-size: 1.2rem; /* Increase font size on hover */
 }
 
 .navbar-logo {
   color: #000;
   cursor: pointer;
   display: flex;
-  align-items: center;
+  align-items: left;
   position: relative;
+  margin-left: 2rem; /* Add margin to position logo to the extreme left */
   top: 40%;
   transform: translateY(-50%);
 }
@@ -39,27 +55,19 @@
 }
 
 .nav-menu {
-  display: grid;
-  grid-template-columns: repeat(4, auto);
-  grid-gap: 10px;
+
+
+  display: flex; /* Afficher les éléments horizontalement */
+  align-items: center; /* Aligner verticalement les éléments au centre */
   list-style: none;
   text-align: center;
-  width: 60vw;
-  justify-content: end;
-  margin-right: 10rem;
+  justify-content: center;
+  margin-right: 10px;
+  flex: 1; /* Utiliser tout l'espace disponible */
 }
 
 .nav-item {
   height: 80px;
-}
-
-.nav-links {
-  color: #000;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  padding: 0.5rem 3rem;
-  height: 100%;
 }
 
 .nav-item:nth-child(1) .nav-links {
@@ -78,12 +86,7 @@
   color: #a1af9d; /* Blue color */
 }
 .nav-item:nth-child(5) .nav-links {
-  color: #a1af9d; /* Blue color */
-}
-
-.nav-links:hover {
-  border-bottom: 4px solid #aa4704;
-  transition: all 0.2s ease-out;
+  color: #dd915f; /* Blue color */
 }
 
 .fa-bars {
@@ -97,6 +100,12 @@
 .menu-icon {
   display: none;
 }
+
+
+
+
+
+
 
 @media screen and (max-width: 960px) {
   .navbar-container {
@@ -139,9 +148,8 @@
   }
 
   .nav-links:hover {
-    background-color: #000;
-    color: #242424;
-    border-radius: 0;
+    background-color: transparent; /* Remove background color on hover */
+    color: #fff; /* Change text color on hover */
   }
 
   .menu-icon {
@@ -174,9 +182,4 @@
     transition: all 0.3s ease-out;
   }
 
-  .nav-links-mobile:hover {
-    background: #000;
-    color: #242424;
-    transition: 250ms;
-  }
 }

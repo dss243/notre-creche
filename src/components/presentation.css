@@ -1,93 +1,135 @@
-.container {
-  position: relative;
-  text-align: center;
-  color: white;
-  padding-top: 30%;
-}
 
-.background {
-  position: absolute;
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
+.presentation-container {
+  height: 100%;
   width: 100%;
-
-  object-fit: cover;
-  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white; 
 }
 
-.content {
-  position: relative;
-  z-index: 1;
-}
 .container {
   display: flex;
-  flex-wrap: wrap;
-  position: relative;
-  text-align: left;
-  padding-left: 2rem;
-  color: white;
-  padding-top: 15%; /* Change this property to move the text up */
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #6e5454;
 }
 
-.container p {
-  font-size: 25px;
-  line-height: 1.5;
-  max-width: 600px;
-  margin-left: 0;
-  color: #7F858A;
+.text-container {
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+ 
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-start; /* Déplacer le contenu en haut */
+  align-items: flex-start; /* Déplacer le contenu à gauche */
 }
+
+.paragraph-background {
+  font-size: 20px;
+  font-family: 'Pacifico';
+  width: 30%;
+  height: 50%;
+  margin-left: 15%;
+  margin-top: 10%;
+  margin-bottom: 18%;
+}
+
 
 .rectangle-list {
+  /* background-image: url('C:\Users\ghandour\OneDrive\Desktop\frontend-atelier\public\images\bg2.jpg'); */
+
+
   display: flex;
   justify-content: space-between;
   list-style: none;
   padding: 0;
-  margin: 2rem auto;
-  width: 70%; /* Adjust this value to set the width of the rectangle list */
-}
-
-.rectangle-list li {
-  position: relative;
-  width: 150px;
-  height: 150px;
-  margin-bottom: 23rem;
-  border-radius: 30%;
-}
-
-.rectangle-1 {
-  background-color: #FF6B6B;
-}
-
-.rectangle-2 {
-  background-color: #FFC16B;
-}
-
-.rectangle-3 {
-  background-color: #64B6FF;
-}
-
-.rectangle-4 {
-  background-color: #6BB690;
-}
-
-.rectangle {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+}
+.list-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+.rectangle-item {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  border-radius: 20%;
+  overflow: hidden;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .rectangle-list p {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 0.1rem;
-  color: #fff;
+  font-family: "Pacifico";
+  margin-top: 0.5rem;
   text-align: center;
-  font-size:10px;
+  font-size: 1rem;
 }
 
-/* Add styles to position the rectangle list below the background image */
-.rectangle-list {
-  position: relative;
-  top: 50%;
-  transform: translateY(50%);
+.rectangle-list h4 {
+  margin-top: 0.5rem;
+  color: #fff;
+  text-align: center;
+  font-size: 0.8rem;
+}
+.rectangle-1 {
+  background-color: #fccfcf;
+}
+
+.rec1-p {
+  color: #fd7f7f;
+}
+.rectangle-2 {
+  background-color: #f5dfa6;
+}
+.rec2-p {
+ color: #fdd05d;
+}
+.rectangle-3 {
+  background-color: #c3d8e7;
+}
+
+.rec3-p {
+  color: #46b0fc;
+}
+
+
+.rectangle-4 {
+  background-color: #cff8d6;
+}
+
+.rec4-p {
+ color: #62ff7d;
 }

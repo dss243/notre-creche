@@ -8,7 +8,7 @@ function Footer() {
     <div className='footer-container'>
       <section className='footer-subscription'>
         <p className='footer-subscription-heading'>
-         notre créche est toujour a votre position 
+        Notre crèche est toujours à votre disposition
         </p>
        
        
@@ -28,8 +28,8 @@ function Footer() {
         </div>
        
         
-          <div className='footer-link-items'>
-            <h2>notre reseau sociaux</h2>
+          <div class='footer-link-items'>
+            <h2>Nos reseaux sociaux</h2>
             <Link to='/'>Instagram</Link>
             <Link to='/'>Facebook</Link>
             <Link to='/'>Youtube</Link>
@@ -37,39 +37,39 @@ function Footer() {
           </div>
         </div>
     
-      <section className='social-media'>
-        <div className='social-media-wrap'>
-          <div className='footer-logo'>
+       <section class='social-media'>
+        <div class='social-media-wrap'>
+          <div class='footer-logo'>
             <Link to='/' className='social-logo'>
              NOTRE CRECHE
             
             </Link>
           </div>
-          <small className='website-rights'>NOTRE CRECHE 2024</small>
-          <div className='social-icons'>
+          <small class='website-rights'>@ NOTRE CRECHE 2024</small>
+          <div class='social-icons'>
             <Link
-              className='social-icon-link facebook'
+              class='social-icon-link facebook'
               to='/'
               target='_blank'
               aria-label='Facebook'
             >
-              <i className='fab fa-facebook-f' />
+              <i class='fab fa-facebook-f' />
             </Link>
             <Link
-              className='social-icon-link instagram'
+              class='social-icon-link instagram'
               to='/'
               target='_blank'
               aria-label='Instagram'
             >
-              <i className='fab fa-instagram' />
+              <i class='fab fa-instagram' />
             </Link>
             <Link
-              className='social-icon-link youtube'
+              class='social-icon-link youtube'
               to='/'
               target='_blank'
               aria-label='Youtube'
             >
-              <i className='fab fa-youtube' />
+              <i class='fab fa-youtube' />
             </Link>
            
           </div>
