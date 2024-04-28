@@ -8,6 +8,7 @@ import Products from './components/pages/Products';
 import SignUp from './components/pages/SignUp';
 import Contact from './components/pages/Contact';
 import SignupActivtie from './components/pages/SignupActivtie';
+import SignUpForwork from './components/pages/SignUpForwork';
 function App() {
   return (
     <> 
@@ -20,6 +21,7 @@ function App() {
           <Route path='/sign-up' component={SignUp} />
           <Route path='/contact' component={Contact} />
           <Route path='/sign-upActivtie' component={SignupActivtie} />
+          <Route path='/sign-upForwork' component={SignUpForwork} />
         </Switch>
       </Router>
     </>
