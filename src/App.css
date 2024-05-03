@@ -123,3 +123,71 @@ button[type="button"] {
 button[type="button"]:hover {
   background-color: #45a049;
 }
+.kids-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 300px; /* set a maximum width for the container */
+  margin: 0 auto; /* center the container horizontally */
+  
+
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  border: 2px solid #ddd; /* increase border width */
+  border-radius: 20px; /* increase border radius */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* add a shadow */
+  width: 350px; /* decrease badge width */
+  height: 220px; /* decrease badge height */
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  position: relative; /* add position property */
+}
+
+.badge::after {
+  content: ""; /* create a pseudo-element */
+  position: absolute; /* position it absolutely */
+  bottom: -5px; /* move it below the badge */
+  left: 50%; /* center it horizontally */
+  transform: translateX(-50%); /* adjust its position */
+  width: 100%; /* make it full width */
+  height: 5px; /* set its height */
+  background-color: #fff; /* set its background color */
+  box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1); /* add a shadow */
+  z-index: -1; /* move it behind the badge */
+}
+
+.badge-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.badge-content {
+  flex: 1;
+}
+
+.badge-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.badge-birthdate {
+  font-size: 12px;
+  color: #666;
+}
+
+.badge-qrcode {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+}

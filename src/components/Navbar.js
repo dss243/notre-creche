@@ -85,6 +85,36 @@ function Navbar() {
                Rejoignez-nous!
               </Link>
             </li>
+            <li className='nav-item'>
+              <Link
+                to='/maps'
+                className='nav-links'
+                onClick={closeMobileMenu}
+              >
+            OU SONT MES ENFANTS!
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link
+                to='/KidsInformations'
+                className='nav-links'
+                onClick={closeMobileMenu}
+              >
+                MES ENFANTS
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link
+                to='/profilmanage'
+                className='nav-links'
+                onClick={closeMobileMenu}
+              >
+                
+GESTION DE PROFILS
+              </Link>
+            </li>
+          
+          
           
 
           </ul>

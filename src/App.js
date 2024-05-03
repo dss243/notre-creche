@@ -9,6 +9,9 @@ import SignUp from './components/pages/SignUp';
 import Contact from './components/pages/Contact';
 import SignupActivtie from './components/pages/SignupActivtie';
 import SignUpForwork from './components/pages/SignUpForwork';
+import KidsInformations from './components/pages/kidsinformations';
+import ProfileManagement from './components/pages/ProfileManagement';
+import Map from './components/pages/Map';
 function App() {
   return (
     <> 
@@ -22,6 +25,9 @@ function App() {
           <Route path='/contact' component={Contact} />
           <Route path='/sign-upActivtie' component={SignupActivtie} />
           <Route path='/sign-upForwork' component={SignUpForwork} />
+          <Route path='/KidsInformations' component={KidsInformations} />
+          <Route path='/profilmanage' component={ProfileManagement} />
+          <Route path='/maps' component={Map} />
         </Switch>
       </Router>
     </>

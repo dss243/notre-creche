@@ -88,6 +88,17 @@
 .nav-item:nth-child(5) .nav-links {
   color: #dd915f; /* Blue color */
 }
+.nav-item:nth-child(6) .nav-links {
+  color: #8e7453; /* Green color */
+}
+
+.nav-item:nth-child(7) .nav-links {
+  color: #758aa4; /* Blue color */
+}
+
+.nav-item:nth-child(8) .nav-links {
+  color: #a1af9d; /* Blue color */
+}
 
 .fa-bars {
   color: #000;
