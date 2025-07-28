@@ -1,4 +1,5 @@
-![Notre Crèche](public/Screenshot%202025-07-28%20092649.png)
+<img src="public/Screenshot%202025-07-28%20092649.png" alt="Notre Crèche" width="180"/>
+
 
 **Notre Crèche** is a full-stack web application designed to enhance communication between kindergartens and parents. It offers a secure and user-friendly platform for monitoring a child's daily activities, health, and school engagement in real time.
 
@@ -34,14 +35,15 @@ To create a transparent, interactive, and practical tool that connects parents a
 ---
 
 ## 📷 Screenshots
-### 💬 Real-Time Chat
-![Chat Feature](public/Screenshot%202025-07-28%20093246.png)
+###  🧒 Home Page
 
-### 🚌 Trip Tracking
-![Trip Tracking](public/Screenshot%202025-07-28%20093257.png)
-
-### 🩺 Health Monitoring Card
-![Health Monitoring](public/Screenshot%202025-07-28%20093307.png)
+![Home page](public/Screenshot%202025-07-28%20093246.png)
 
 ### 🌍 Public Visitor Section
-![Visitor Page](public/Screenshot%202025-07-28%20093315.png)
+![TVisitor Page](public/Screenshot%202025-07-28%20093257.png)
+
+### 🚌 Trip Tracking and chat
+![tracking](public/Screenshot%202025-07-28%20093307.png)
+
+###  amdimenstration Section
+![admin Section](public/Screenshot%202025-07-28%20093315.png)
